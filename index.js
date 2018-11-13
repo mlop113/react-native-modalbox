@@ -318,7 +318,7 @@ var ModalBox = createReactClass({
       position = containerHeight - this.state.height;
     }
     else if (this.props.position == "center") {
-      position = 37;
+      position = containerHeight / 2 - this.state.height / 2;
     }
     // Checking if the position >= 0
     if (position < 0) position = 0;
