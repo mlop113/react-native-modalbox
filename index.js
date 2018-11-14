@@ -241,7 +241,7 @@ var ModalBox = createReactClass({
     }, () => {
       requestAnimationFrame(() => {
         // Detecting modal position
-        let positionDest = this.calculateModalPosition(this.state.containerHeight - this.state.keyboardOffset, this.state.containerWidth);
+        let positionDest = this.calculateModalPosition(this.state.containerHeight / 2 - this.state.keyboardOffset, this.state.containerWidth);
         if (this.state.keyboardOffset && (positionDest < this.props.keyboardTopOffset)) {
           positionDest = this.props.keyboardTopOffset;
         }
